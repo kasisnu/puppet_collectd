@@ -60,6 +60,7 @@ class collectd (
   -> class { '::collectd::install': }
   -> class { '::collectd::config': }
   -> class { '::collectd::plugins::aggregation': }
+  -> class { '::collectd::plugins::tcpconns': }
   -> class { '::collectd::plugins::write_http': }
   -> class { '::collectd::plugins::signalfx': }
   -> anchor { 'collectd::end': }
